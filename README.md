@@ -4,7 +4,7 @@ Motor Meets is an application for organizing track days and high performance dri
 
 Things you may want to cover:
 
-* Ruby version 
+* Ruby version 2.7.3
 
 * System dependencies
 
