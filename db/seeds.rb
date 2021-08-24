@@ -6,6 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+user1 = User.create({email: "brodyboi123@cs.com", password: "mmmmmm"})
+
+user2 = User.create({email: "derrick123@cs.com", password: "asasas"})
+
+
+
 track1 = Track.create({name: 'Indianapolis', location: 'Indiana USA', track_type: 'oval', length: 5, corners: 4, description: "Fastest non drag strip in the US!"})
 
 track2 = Track.create({name: 'Circuito Internacional de Algarve', location: 'Portugal', track_type: 'circuit', length: 4.8, corners: 15, description: "Challenging modern circuit with blind crests and plenty of areas to throw off racers."})
@@ -20,7 +26,12 @@ track6 = Track.create({name: 'Dayona International Speedway', location: 'USA', t
 
 
 
-
 event1 = Event.create({title: 'Track Daze', location_id: 1, organizer_id: 1, attendees_id: 2, description: "Open lapping/ test and tune."})
 
 event2 = Event.create({title: 'Miata Masters', location_id: 3, organizer_id: 2, attendees_id: 2, description: "MX5 Cup Masters. The best in the category meet here."})
+
+
+
+car1 = Car.create!({make: "Toyota", model: "GT86", year: 2017, color: "orange", drivetrain: "FR", owner_id: 2, description: "A basically stock modern front engine, rear wheel drive sports coupe with modest power, and a manual transmission. Quick enough to be fun and completely driver focused." })
+
+car2 = Car.create!({make: "Honda", model: "Civic Type R", year: 2018, color: "white", drivetrain: "FF", owner_id: 1, description: "A fast, capable hot hatch." })
