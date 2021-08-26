@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/tracks', to: 'homes#index'
   get '/tracks/:id', to: 'homes#index'
   get '/events', to: 'homes#index'
+  get '/events/:id', to: 'homes#index'
   get '/cars', to: 'homes#index'
 
 
@@ -14,8 +15,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :intro, only: [:index, :show]
       resources :tracks, only: [:index, :show]
-      resources :events, only: [:index, :show, :new, :create]
-      resources :cars, only: [:index, :show, :new, :create]
+      resources :events, only: [:index, :show, :create]
+      resources :cars, only: [:index, :show, :create]
     end
   end
 end
