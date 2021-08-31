@@ -7,7 +7,8 @@ const EventsLink = (props) => {
     <div className="cell small-5 large-6 text-center">
       <div className="callout large">
           <a href="/events">Upcoming Events</a>
-      </div> 
+      </div>
+        Old Events
     </div>
   )
 }
