@@ -15,7 +15,6 @@ const Intro = (props) => {
           <a href="/events">Events</a>
 
       </div> 
-      <a href="/events">Tracks</a>
     </div>
 
     </div>
