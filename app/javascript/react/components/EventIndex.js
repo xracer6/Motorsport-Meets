@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 
 const EventsIndex = (props) => {
     const [events, setEvents] = useState([])
+
+
   return(
     <div className="cell small-5 large-6 text-center">
       <div className="callout large">
