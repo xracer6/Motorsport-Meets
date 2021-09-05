@@ -10,4 +10,5 @@ Motor Meets is an application for organizing track days and high performance dri
 - If you are signed in and you click on an event, you can see all sorts of info about the event including a list of all of the users who are attending. There should also be a link to register for the event. If you are NOT signed in, you can see the event, but you can't see the users and you can't register.
 - Create a car table. A car needs to have a make, model, year, color, drivetrain, owner, and description. A car can only have one owner (which is a user from the users table)
 - Update the users model. A user needs to have a first name, last name, e-mail address, age, location (zip code), and a list of cars that they own. A single user can have one or more cars (a car from the cars table). A user can also be registered to one or more events (from the events table).
-Focus on State and Component compatibility to display events. Then a form can be made for setting up an event. This includes setting up the fetch statements for all data for an event and .map
+Focus on State and Component compatibility to display events. Then a form can be made for setting up an event. This includes setting up the fetch statements for all data for an event and .map.
+Utilize "Set Events to finish getting everything from the Rails API.
