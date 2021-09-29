@@ -4,15 +4,24 @@ import { useEffect, useState } from 'react'
 const EventsIndex = (props) => {
     const [events, setEvents] = useState([])
 
+      const getEvents = async () => {
+        try {
+          const response = await fetch('/api/v1/jobs')
+          if (!response) {
+            const errorMessage = `${response.status} (${response.statusTest})`
+            const error = new Error(errorMessage)
+            throw(error)
+          }
+          const parsedJobs= await response.json()
+          setJobs(parsedJobs)
+        } catch(err){
+          console.error(`Error in fetch: ${err.message}`)
+        }
+      }
+
 
   return(
-    <div className="cell small-5 large-6 text-center">
-      <div className="callout large">
-          <a href="/events">See Upcoming Events</a>
-          <h2 className="EventName"><Link to={`/events/${props.title}`}>{events}</Link></h2>
-      </div>
-        Old Events
-    </div>
+    <div> *Map through each here* </div>
   )
 }
 
