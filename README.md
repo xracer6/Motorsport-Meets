@@ -2,6 +2,8 @@
 
 Motor Meets is an application for organizing track days and high performance driving/riding events. Users can also review different circuits and see which are right for them and their skill level. 
 
+Database: postgresql
+
 # TODO:
 - Create DB table for events. An event needs to have a title, a description, a location (the track that the event is at), an organizer (the user who created the event), date created, date of the event, and a list of users who are attending the event.
 - Create a DB entry for an event at a track that already exists. The event should reference a track that is already in the tracks table, an organizer who is in the users table, and an attendee from the users table
