@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
+      get 'events/index'
+      post 'events/create'
       resources :intro, only: [:index, :show]
       resources :tracks, only: [:index, :show]
       resources :events, only: [:index, :show, :create]

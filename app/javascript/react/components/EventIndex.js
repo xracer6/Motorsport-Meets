@@ -7,22 +7,26 @@ const EventsIndex = (props) => {
   const getEvents = async () => {
     try {
       const response = await fetch('/api/v1/events')
-      if (!response) {
-        const errorMessage = `${response.status} (${response.statusTest})`
+      if (!response.ok) {
+        const errorMessage = `${response.status} (${response.statusText})`
         const error = new Error(errorMessage)
         throw(error)
       }
-      const parsedJobs= await response.json()
-      setJobs(parsedEvents)
+      const parsedEvents= await response.json()
+      setEvents(parsedEvents)
     } 
     catch(err){
       console.error(`Error in fetch: ${err.message}`)
     }
   }
 
-  const eventList = events.map(eachEvent => {
+  useEffect(() => {
+    getEvents()
+  }, [])
+
+  const eventList = events.map(event => {
     return (
-      <li key={eachEvent.title}>
+      <li key={event.title}>
 
       </li>
     )
