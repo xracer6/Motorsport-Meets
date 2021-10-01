@@ -14,8 +14,7 @@ const EventsIndex = (props) => {
       }
       const parsedEvents= await response.json()
       setEvents(parsedEvents)
-    } 
-    catch(err){
+    } catch(err){
       console.error(`Error in fetch: ${err.message}`)
     }
   }
@@ -26,9 +25,7 @@ const EventsIndex = (props) => {
 
   const eventList = events.map(event => {
     return (
-      <li key={event.title}>
-
-      </li>
+      <li key={event.id}>{event.title}</li>
     )
   })
 
