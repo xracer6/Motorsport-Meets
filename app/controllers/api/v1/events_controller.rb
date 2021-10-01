@@ -7,7 +7,7 @@ class Api::V1::EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
-    render json: product
+    render json: event
   end
 
   def create
@@ -43,6 +43,4 @@ class Api::V1::EventsController < ApplicationController
       render json: {error: ["You need to be signed in first"]}
     end
   end
-end
-  
 end
