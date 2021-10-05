@@ -24,14 +24,15 @@ const EventsIndex = (props) => {
   }, [])
 
   const eventList = events.map(event => {
+    console.log(event)
     return (
-      <li key={event.id}>{event.title}</li>
+      <li key={event.id}>{event.title}, {event.description}</li>
     )
   })
 
   return(eventList)
 }
     
-  
+  //Next step is to use Fetch to get the actual string data for location and organizer. 
 
 export default EventsIndex
