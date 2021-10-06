@@ -33,6 +33,7 @@ const EventsIndex = (props) => {
   return(eventList)
 }
     
-  //Next step is to use Fetch to get the actual string data for location and organizer. 
+  //Next step is to use Fetch to get the actual string data for location and organizer.
+  //Then adjust the controller so the correct info can be taken from the API
 
 export default EventsIndex
