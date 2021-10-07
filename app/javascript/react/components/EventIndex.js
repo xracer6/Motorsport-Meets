@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import TrackIndex from './TrackIndex'
 
 const EventsIndex = (props) => {
   const [events, setEvents] = useState([])
@@ -26,7 +27,7 @@ const EventsIndex = (props) => {
   const eventList = events.map(event => {
     console.log(event)
     return (
-      <li key={event.id}>{event.title}, {event.description}</li>
+      <li key={event.id}>{event.title}, {event.description} {event.location}</li>
     )
   })
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 
-const TracksIndex = (props) => {
+const TrackIndex = (props) => {
   const [tracks, setTracks] = useState([])
 
   const getTracks = async () => {
@@ -36,4 +36,4 @@ const TracksIndex = (props) => {
 
 
 
-export default TracksIndex
+export default TrackIndex
