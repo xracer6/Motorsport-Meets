@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import TrackIndex from './TrackIndex'
 
 const EventsIndex = (props) => {
   const [events, setEvents] = useState([])
@@ -26,13 +27,14 @@ const EventsIndex = (props) => {
   const eventList = events.map(event => {
     console.log(event)
     return (
-      <li key={event.id}>{event.title}, {event.description}</li>
+      <li key={event.id}>{event.title}, {event.description} {event.location}</li>
     )
   })
 
   return(eventList)
 }
     
-  //Next step is to use Fetch to get the actual string data for location and organizer. 
+  //Next step is to use Fetch to get the actual string data for location and organizer.
+  //Then adjust the controller so the correct info can be taken from the API
 
 export default EventsIndex
