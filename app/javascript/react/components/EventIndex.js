@@ -36,6 +36,7 @@ const EventsIndex = (props) => {
     
   //Next step is to use Fetch to get the actual string data for location and organizer.
   //Then adjust the controller so the correct info can be taken from the API
-  //Utilize Track Index in here so the data can be accessed
+  //Utilize Track Index in here so the data can be accessed...
+  // Check Schema and Controllers as well as migratons to see if maybe it is the model itself that could have an issue
 
 export default EventsIndex
