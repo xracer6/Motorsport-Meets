@@ -25,9 +25,10 @@ const EventsIndex = (props) => {
   }, [])
 
   const eventList = events.map(event => {
-    console.log(event)
+    //GET /api/v1/tracks/<id> to get the track name
+    //GET /api/v1/users/<id> to get the organizer name
     return (
-      <li key={event.id}>{event.title}, {event.description} {event.location}</li>
+      <li key={event.id}>{event.title}, {event.description}, {event.location_id}, {event.organizer_id}</li>
     )
   })
 
