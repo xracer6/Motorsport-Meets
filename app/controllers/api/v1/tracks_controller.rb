@@ -7,7 +7,7 @@ class Api::V1::TracksController < ApplicationController
 
   def show
     @track = Track.find(params[:id])
-    render json: track
+    render json: @track
   end
 
   def track_params
