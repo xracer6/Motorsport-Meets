@@ -25,8 +25,14 @@ const EventsIndex = (props) => {
   }, [])
 
   const eventList = events.map(event => {
-    //GET /api/v1/tracks/<id> to get the track name
-    //GET /api/v1/users/<id> to get the organizer name
+    /*
+    let track = fetch(`/api/v1/tracks/${event.location_id}`)
+      .then(response => {
+
+        track = response.json()
+      })
+    */
+    
     return (
       <li key={event.id}>{event.title}, {event.description}, {event.location_id}, {event.organizer_id}</li>
     )
@@ -39,5 +45,7 @@ const EventsIndex = (props) => {
   //Then adjust the controller so the correct info can be taken from the API
   //Utilize Track Index in here so the data can be accessed...
   // Check Schema and Controllers as well as migratons to see if maybe it is the model itself that could have an issue
+
+  // The Events controller references some data from the Tracks controller. There was an issue preventing data being accessed on the back end for the SHOW routing. Now that this has been fixed I will be expanding on the React functionality for Events displaying.
 
 export default EventsIndex
